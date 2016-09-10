@@ -18,7 +18,7 @@ diag.setLayout(lay)
 box.button(QDialogButtonBox.Ok).clicked.connect(lambda: diag.accept() )
 box.button(QDialogButtonBox.Cancel).clicked.connect(lambda: diag.reject() )
 result = diag.exec_()
-print result
+#print result
 if result == 1:
     for f in composers:
         if (f.composerWindow().windowTitle()== listW.currentItem().text() ):
